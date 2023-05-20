@@ -1,6 +1,6 @@
 "Proyecto Fin del Segundo Modulo"
 
-![imagen del logo del proyecto](./img/voyage-logo-color.png) 
+![imagen del logo del proyecto](https://github.com/pequege/Voyage-crud-servicios/tree/main/img/voyage-logo-color.png) 
 # **Voyage Travel**   
 
 Nos complace poder llegar a ustedes para presentarles nuestra empresa especializada en Turismo. Voyage, es una Empresa de Viajes y Turismo, avalada fuertemente en la elección del Staff; comprometiéndose a brindar los servicios turisticos con seriedad, prevaleciendo la confiabilidad, amabilidad y distinción.
