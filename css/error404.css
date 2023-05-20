@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 
 body {
-  font-family: "Audiowide", cursive;
-  height: 100%;
+    font-family: "Audiowide", cursive;
+    height: 100%;
 }
 
 * {
@@ -22,7 +22,7 @@ section {
     padding: 110px 100px;
 }
 
-main{
+main {
     background-image: none;
 }
 
@@ -45,7 +45,7 @@ main{
 }
 
 div {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     margin: 2rem;
     font-size: 1.2rem;
@@ -92,15 +92,15 @@ h1 {
 }
 
 @media(max-width:800px) {
-    
+
     .box h1 {
         font-size: 32px;
     }
-    
+
     .box h2 {
         font-size: 20px;
     }
-    
+
     .box a.boxBtn {
         padding: 15px;
     }
