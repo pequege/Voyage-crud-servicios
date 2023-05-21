@@ -14,6 +14,7 @@ let codigo = document.getElementById("codigo"),
   imagen = document.getElementById("imagen"),
   descripcion = document.getElementById("descripcion"),
   dias = document.getElementById("dias"),
+  destino = document.getElementById("destino")
   alert = document.getElementById("alerta");
 let altaPaquete = true;
 let listaPaquetes = JSON.parse(localStorage.getItem("listaPaquetes")) || [];
@@ -27,7 +28,8 @@ if (listaPaquetes.length > 0) {
         paquete.categoria,
         paquete.imagen,
         paquete.descripcion,
-        paquete.dias
+        paquete.dias,
+        paquete.destino
       )
   );
 }
@@ -49,6 +51,7 @@ function crearFila(paquete, fila) {
         <td><span class="my-class text-truncate">${paquete.imagen}</span></td>
         <td><span class="my-class text-truncate">${paquete.descripcion}</span></td>
         <td>${paquete.dias}</td>
+        <td>${paquete.destino}</td>
         <td>
             <button class="btn btn-warning" onclick="prepararPaquete('${paquete.codigo}')">
                 <i class="bi bi-pencil"></i>
@@ -85,7 +88,8 @@ function crearPaquete() {
     categoria.value,
     imagen.value,
     descripcion.value,
-    dias.value
+    dias.value,
+    destino.value
   );
   mostrarMensajeError(resumen);
   if (resumen.length === 0) {
@@ -96,7 +100,8 @@ function crearPaquete() {
       categoria.value,
       imagen.value,
       descripcion.value,
-      dias.value
+      dias.value,
+      destino.value
     );
     listaPaquetes.push(paqueteNuevo);
     guardarEnLocalstorage();
@@ -127,6 +132,7 @@ window.prepararPaquete = (codigoPaquete) => {
   imagen.value = tipoPaquete.imagen;
   descripcion.value = tipoPaquete.descripcion;
   dias.value = tipoPaquete.dias;
+  destino.value = tipoPaquete.destino;
   modalPaquete.show();
   altaPaquete = false;
 };
@@ -140,6 +146,7 @@ function editarPaquete() {
   listaPaquetes[posicionPaquete].imagen = imagen.value;
   listaPaquetes[posicionPaquete].descripcion = descripcion.value;
   listaPaquetes[posicionPaquete].dias = dias.value;
+  listaPaquetes[posicionPaquete].destino = destino.value;
   guardarEnLocalstorage();
   let tablaPaquete = document.getElementById("tablaPaquete");
   tablaPaquete.children[posicionPaquete].children[2].innerHTML = nombre.value;
@@ -151,6 +158,7 @@ function editarPaquete() {
   tablaPaquete.children[posicionPaquete].children[6].children[0].innerHTML =
     descripcion.value;
   tablaPaquete.children[posicionPaquete].children[7].innerHTML = dias.value;
+  tablaPaquete.children[posicionPaquete].children[8].innerHTML = destino.value;
   Swal.fire("Paquete Modificado Exitosamente");
   limpiarFormulario();
   modalPaquete.hide();

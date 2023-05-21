@@ -1,3 +1,6 @@
+import paquetes from '../db/paquetes.json' assert {type:'json'};
+localStorage.setItem('listaPaquetes', JSON.stringify(paquetes));
+
 let listaPaquetes = JSON.parse(localStorage.getItem('listaPaquetes')) || [];
 
 listaPaquetes.map((paquete) =>{
@@ -18,7 +21,7 @@ function crearColumna(paquete){
         <div class="card-footer">
             <p class="dias">${paquete.dias}</p>
             <div class="d-flex justify-content-around">
-                <button class="btn btn-primary" onclick="navegarPaginaDetalle('${paquete.codigo}')">
+                <button class="btn btn-primary" onclick="navegarPaginaDetalle(${paquete.codigo})">
                     Ver Detalle
                 </button>
                 <button class="btn btn-outline-light precio">$ ${paquete.precio}</button>
@@ -28,6 +31,6 @@ function crearColumna(paquete){
     `
 }
 
-function navegarPaginaDetalle(codigo){
+window.navegarPaginaDetalle = (codigo) =>{
     window.location.href = window.location.origin + '/pages/detalle.html?codigo=' + codigo;
 }

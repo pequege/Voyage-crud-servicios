@@ -6,7 +6,8 @@ export default class Paquete{
     #imagen;
     #descripcion;
     #dias;
-    constructor(codigo = uuidv4(),nombre,precio,categoria,imagen,descripcion,dias){
+    #destino;
+    constructor(codigo = uuidv4(),nombre,precio,categoria,imagen,descripcion,dias, destino){
         this.#codigo = codigo;
         this.#nombre = nombre;
         this.#precio = precio;
@@ -14,6 +15,7 @@ export default class Paquete{
         this.#imagen = imagen;
         this.#descripcion = descripcion;
         this.#dias = dias;
+        this.#destino = destino;
     }
     get codigo(){
         return this.#codigo;
@@ -57,6 +59,12 @@ export default class Paquete{
     set dias(dias){
         this.#dias = dias;
     }
+    get destino(){
+        return this.#destino;
+    }
+    set destino(destino){
+        this.#destino = destino;
+    }
     toJSON(){
         return{
             codigo : this.codigo,
@@ -66,6 +74,7 @@ export default class Paquete{
             imagen : this.imagen,
             descripcion : this.descripcion,
             dias : this.dias,
+            destino : this.destino
         }
     }
 }

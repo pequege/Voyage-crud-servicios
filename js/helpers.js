@@ -29,7 +29,7 @@ function validarDias(dias){
 }
 export function validacionesFinales(nombre,precio,categoria,imagen,descripcion,dias){
     let resumen = '';
-    if(! validarCantidadDeCaracteres(nombre, 5 , 100)){
+    if(! validarCantidadDeCaracteres(nombre, 20 , 250)){
         resumen = 'El Nombre del Paquete de Viajes debe dar a conocer por lo menos el destino. <br>';
     };
     if(! validarCantidadDeCaracteres(precio, 4 , 10)){
@@ -41,7 +41,7 @@ export function validacionesFinales(nombre,precio,categoria,imagen,descripcion,d
     if(! validarURLImagen(imagen)){
         resumen += 'La URL debe Contener una Extension Valida(.jpg,.png o .gif). <br>';
     }
-    if(! validarCantidadDeCaracteres(descripcion, 20 , 100)){
+    if(! validarCantidadDeCaracteres(descripcion, 50 , 500)){
         resumen += 'La Descripcion debe Detallar el Contenido del Viaje y Llamar la Atencion del Cliente con las Actividades que se Ofrecen en el Paquete. <br>';
     }
     if(! validarDias(dias)){

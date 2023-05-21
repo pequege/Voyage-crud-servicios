@@ -1,0 +1,32 @@
+[
+  {
+    "codigo": "1",
+    "nombre": "Brasil soñado: Disfrutá de las playas más lindas con descuentos hasta de un 35% en tarifa My Cruise y All Inclusive",
+    "precio": "399.784,00",
+    "descripcion": "¡Explorá las maravillas de Brasil mientras te relajás a bordo de nuestros cruceros! Descubrí la belleza de los paisajes mientras disfrutás de una experiencia inolvidable en alta mar. ¡Te esperamos!",
+    "categoria": "Internacional",
+    "imagen": "https://cdn.pixabay.com/photo/2017/01/08/19/30/rio-de-janeiro-1963744_960_720.jpg",
+    "dias" : "7 Dias",
+    "destino" : "Brasil"
+  },
+  {
+    "codigo": "2",
+    "nombre": "La Riviera Maya por 11 DIAS",
+    "precio": "725.032,00",
+    "descripcion": "Enamorate de la Riviera Maya. Nuestros programas te aseguran lugares confirmados todo el año, la mayor oferta de servicios turísticos y un viaje asegurado con nuestro seguro de asistencia.",
+    "categoria": "Internacional",
+    "imagen": "https://cdn.pixabay.com/photo/2016/03/04/05/12/cancun-1235489_960_720.jpg",
+    "dias": "11 Dias",
+    "destino" : "Cancún, México"
+  },
+  {
+    "codigo": "3",
+    "nombre": "Imperdibles de Japón",
+    "precio": "2.349.771,00",
+    "descripcion": "Nos encontramos con nuestro guía en la recepción del hotel. Conoceremos los integrantes de nuestro grupo y tras ello daremos un paseo nocturno. Al final de la tarde nos vamos a introducir en este fascinante país yendo en metro (billetes incluidos) a la zona de Shinjuku.",
+    "categoria": "Internacional",
+    "imagen": "https://cdn.pixabay.com/photo/2019/04/20/11/39/japan-4141578_960_720.jpg",
+    "dias": "14 Dias",
+    "destino" : "Tokyo, Japón"
+  }
+]

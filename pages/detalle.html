@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="" />
+  <meta name="description" content="Venta de vuelos para viajes a todo el mundo a precios promocionales, congela el precio" />
   <meta name="keywords" content="vualo, viajes, paquetes turisticos" />
   <meta name="author" content="Gerardo Mansilla" />
   <link rel="shortcut icon" href="../img/voyage-logo.svg" type="image/x-icon">
@@ -57,6 +57,10 @@
       <h1 class="text-light" id="paquete-destino">Maldivas</h1>
     </section>
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="p-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><span id="paquete-categoria"></span></li>
+      </ol>    
     </nav>
     <div class="container">
       <section class="row">
@@ -93,15 +97,15 @@
                 Básico
               </button>
             </li>
-            <li class="nav-item mx-1" role="presentation">
+            <li class="nav-item mx-1 not-allowed" role="presentation">
               <button class="nav-link text-dark disabled bg-secondary" id="profile-tab" data-bs-toggle="tab"
                 data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
                 aria-selected="false">
                 Estándar
               </button>
             </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link text-dark" id="contact-tab" data-bs-toggle="tab"
+            <li class="nav-item not-allowed" role="presentation">
+              <button class="nav-link text-dark disabled bg-secondary" id="contact-tab" data-bs-toggle="tab"
                 data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
                 aria-selected="false">
                 Premium

@@ -13,10 +13,6 @@
     font-size: 1.5em;
 }
 
-#galeria .carousel-inner{
-    max-height: 100vh;
-}
-
 #reviews .carousel-inner{
     max-width: 900px;
 }
@@ -31,6 +27,23 @@
 
 .card-text{
     width: 100%;
+}
+
+#galeria{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    scroll-margin: 2em;
+    transition: background-image 2s ease-in-out;
+}
+
+#galeria h1{
+    background-color: #000000a9;
+    border-radius: 6px;
+    padding: 0.3em;
+    filter: drop-shadow(0px 0px 3px #000000b7);
 }
 
 /* estilo puntaje con estrellas */
@@ -61,4 +74,8 @@
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
     color: #ffc107;  
+}
+
+.not-allowed {
+    cursor: not-allowed;
 }
