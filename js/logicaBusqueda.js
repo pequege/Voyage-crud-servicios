@@ -32,4 +32,3 @@ document.addEventListener("keyup", (e) => {
       : (mensaje.className = "fs-2 d-none");
   }
 });
-

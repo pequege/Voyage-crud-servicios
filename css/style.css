@@ -34,15 +34,6 @@ main {
   color: aliceblue;
   background: rgba(4, 4, 11, 0.572);
 }
-/* PAGINA PRINCIPAL  */
-* {
-  margin: 0px;
-  padding: 0px;
-}
-header {
-  color: aliceblue;
-  background: rgb(57, 57, 247);
-}
 
 /* FOOTER */
 footer {
@@ -61,21 +52,46 @@ footer img {
   height: 2.2em;
 }
 
-h1,
+/* h1,
 h2,
 h3 {
   font-family: "Audiowide", cursive;
+} */
+
+i{
+  font-style: normal;
+  font-weight: bold;
 }
-.bg-blue {
-  color: aliceblue;
-  background: rgba(4, 4, 11, 0.572);
-}
+
 .btnEstilo {
   background-color: blueviolet;
 }
 
+#paquetes .card{
+  box-shadow: #000 0px 0px 1px;
+  transform: scale(1);
+  transition: 300ms;
+}
+
+#paquetes .card:hover{
+  box-shadow: #0008 5px 8px 10px;
+  transform: scale(1.05);
+  transition: 300ms;
+}
+
+.card img{
+  aspect-ratio: 16/9;
+}
+
+.card-text{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* From which line on to truncate */
+  overflow: hidden;
+}
+
 #paquetes .card, #features .card {
-    background: #00000092;
+    background: rgba(0, 0, 0, 0.75);;
     color: white;
 }
 .btn-primary {
