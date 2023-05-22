@@ -28,5 +28,15 @@
     "imagen": "https://cdn.pixabay.com/photo/2019/04/20/11/39/japan-4141578_960_720.jpg",
     "dias": "14 Dias",
     "destino" : "Tokyo, Japón"
+  },
+  {
+    "codigo": "4",
+    "nombre": "VIAJES A DUBAI, CHIPRE Y GRECIA DESDE ARGENTINA",
+    "precio": "980.784,00",
+    "descripcion": "Dubai: 3 noches con desayuno, exc. city tour. Chipre - Larnaca: 5 noches con desayuno, visita Petra tu Romiou, Pafos, Troodos, Limassol, Nicosia. Athenas: 3 noches con desay. visita ciudad c/Acrópolis. Mykonos: 3 noches con desay. Syros: 3 noches con desay.",
+    "categoria": "Internacional",
+    "imagen": "https://cdn.pixabay.com/photo/2016/10/24/22/43/dubai-1767540_960_720.jpg",
+    "dias" : "14 Dias",
+    "destino" : "Emiratos Árabes"
   }
 ]
